@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="main-heading">
+        Spli <br />
+        tter
+      </h1>
+      <div class="tip-container">
+        <div class="bill-container">
+          <div class="bill-input-container">
+            <label class="input-heading" for="bill__input">Bill</label>
+            <div class="bill-input">
+              <i class="fas fa-dollar-sign"></i>
+              <input type="number" id="bill__input" placeholder="0" />
+            </div>
+          </div>
+          <div class="select-tip-container">
+            <label class="input-heading">Select Tip %</label>
+            <div class="percent-container">
+              <button class="percent-btn">5%</button>
+              <button class="percent-btn active">10%</button>
+              <button class="percent-btn">15%</button>
+              <button class="percent-btn">25%</button>
+              <button class="percent-btn">50%</button>
+              <input id="custom__input" class="custom-input" type="number" placeholder="Custom" />
+            </div>
+          </div>
+          <div class="person-input-container">
+              <div class="person-label-container">
+            <label class="input-heading" for="bill_input"
+              >Number of People</label
+            >
+            <span class="alert">can't be zero</span>
+        </div>
+            <div class="bill-input">
+              <i class="fas fa-user"></i>
+              <input type="number" id="people__input" placeholder="1" required/>
+            </div>
+          </div>
+        </div>
+        <div class="amount-container">
+          <div class="tip-total-amount-container">
+            <div class="tip-amount">
+              <div class="tip-amount-heading">
+                <small>Tip Amount</small> <br />
+                <span>/ person</span>
+              </div>
+              <div class="total-amount">
+                <span class="dollar-amount">$0.00</span>
+              </div>
+            </div>
+            <div class="total-amount">
+              <div class="total-amount-heading">
+                <small>Total</small> <br />
+                <span>/ person</span>
+              </div>
+              <div class="total-amount">
+                <span class="dollar-amount">$0.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="reset-btn-container">
+              <button type="submit" class="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
