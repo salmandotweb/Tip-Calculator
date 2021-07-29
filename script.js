@@ -85,7 +85,7 @@ function reset(){
 
     percentageBtn[1].click()
 
-    peopleInput.value = ''
+    peopleInput.value = '1'
     peopleCalc()
 
     dollarAmount[0].innerHTML = `$0.00`
