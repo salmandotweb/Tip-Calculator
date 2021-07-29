@@ -221,6 +221,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 /*  */
@@ -242,9 +243,11 @@ body{
 .tip-amount-heading small{
     font-size: 1.3rem;
     color: var(--white);
+    margin-right: 2rem;
 }
 .tip-amount-heading span{
     color: var(--dark-greyish-cyan-2);
+    margin-right: 2rem;
 }
 .dollar-amount{
     font-size: 3.5rem;
@@ -263,9 +266,11 @@ body{
 .total-amount-heading small{
     font-size: 1.3rem;
     color: var(--white);
+    margin-right: 2rem;
 }
 .total-amount-heading span{
     color: var(--dark-greyish-cyan-2);
+    margin-right: 2rem;
 }
 
 /*  */
